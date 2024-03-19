@@ -4,7 +4,12 @@ Angular version: ~17.
 
 Repo maintainers:
 
-- [Sergey Gultyayev](https://github.com/gultyayev)
+- [Oleksandr Shevchenko](https://github.com/gultyayev)
+
+## Link to deploys
+
+Link to CloudFront - https://d2bzni3fsbs3mw.cloudfront.net/
+Link to S3 - https://my-bucket-angular-shevchenko.s3.eu-central-1.amazonaws.com/
 
 ## The purpose
 
