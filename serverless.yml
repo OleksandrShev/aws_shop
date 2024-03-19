@@ -42,6 +42,8 @@ resources:
         OwnershipControls:
           Rules:
             - ObjectOwnership: BucketOwnerEnforced
+        PublicAccessBlockConfiguration:
+          BlockPublicPolicy: false
         # VersioningConfiguration:
         #   Status: Enabled
 
@@ -63,7 +65,11 @@ resources:
                     - " "
                     - - "arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity"
                       - !Ref OriginAccessIdentity
-
+            - Sid: "ReadAccess"
+              Effect: Allow
+              Action: s3:GetObject
+              Resource: arn:aws:s3:::${self:custom.s3BucketName}/*
+              Principal: "*"
     OriginAccessIdentity:
       Type: AWS::CloudFront::CloudFrontOriginAccessIdentity
       Properties:
