@@ -9,7 +9,7 @@ Repo maintainers:
 ## Link to deploys
 
 Link to CloudFront - https://d2bzni3fsbs3mw.cloudfront.net/
-Link to S3 - https://my-bucket-angular-shevchenko.s3.eu-central-1.amazonaws.com/
+Link to S3 - https://my-bucket-angular-shevchenko.s3.eu-central-1.amazonaws.com/index.html
 
 ## The purpose
 
